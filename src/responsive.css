@@ -9,6 +9,7 @@
         position: relative;
         z-index: 2;
         left: -30%;
+        transition-property: left, opacity;
         transition-duration: 1s;
         opacity: 0;
     }
@@ -20,7 +21,7 @@
         padding-right: 2rem;
         cursor: pointer;
     }
-    .navbar-active{
+    #navbar.navbar-active{
         left: 0% !important;
         opacity: 1 !important;
     }
