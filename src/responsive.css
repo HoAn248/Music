@@ -1,0 +1,34 @@
+@media screen and (max-width: 756px) {
+    html{
+        font-size: 50%;
+    }
+    #root div.row{
+        position: relative;
+    }
+    #navbar{
+        position: relative;
+        z-index: 2;
+        left: -30%;
+        transition-duration: 1s;
+        opacity: 0;
+    }
+    #carouselExampleIndicators{
+        width: 60% !important;
+    }
+    #navbar-hide{
+        display: flex !important;
+        padding-right: 2rem;
+        cursor: pointer;
+    }
+    .navbar-active{
+        left: 0% !important;
+        opacity: 1 !important;
+    }
+    #main-content{
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+    }
+}

@@ -1,0 +1,248 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--body-background--);
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+    height: 30%;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85); 
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#root{
+    margin: 3rem auto;
+    width: 70rem;
+    background-color: var(--container-background--);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2rem;
+}
+i{
+    font-size: 3rem;
+}
+
+#navbar {
+    padding: 1.5rem;
+    background-color: var(--navar-background--);
+    border-radius: 2rem 0 0 2rem;
+    color: var(--font-color--);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+#check{
+    margin-top: 10px;
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--check-background--);
+    border-radius: 2.5rem ;
+    overflow: hidden;
+}   
+#check div{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--check-background-primary--);
+    border-radius: 50%;
+    left: 0%;
+    transition-property: left;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.check-active{
+    left: 50% !important;
+}
+#navbar-none {
+    cursor: pointer;
+}
+#logo img{
+    width: 20%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#logo h5{
+    font-size: 2rem;
+    padding-left: 0.7rem;
+    color: var(--logo-color--);
+    cursor: pointer;
+}
+#logo h6{
+    font-size: 2rem;
+    cursor: pointer;
+}
+#navbar-content {
+    padding: 2rem 0;
+    opacity: 0.8;
+}
+#navbar-content li{
+    position: relative;
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    list-style: none;
+    cursor: pointer;
+    transition-property: background-color , color;
+    transition-duration: 0.4s;
+    border-radius: 0.4rem;
+}
+#navbar-content li:hover{
+    background-color: var(--navbar-content-li-background--);
+    color: var(--navbar-content-li-hover-color--);
+}
+#navbar-content li i{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+#navbar-content li div{
+    transition-property: background-color;
+    transition-duration: 0.7s;
+}
+#navbar-content li:hover div{
+    position: absolute;
+    width: 0.5rem;
+    height: 100%;
+    top: 0px;
+    right: -2rem;
+    background-color: var(--navbar-content-li-background--);
+}
+#navbar-content h5{
+    padding-left: 2rem;
+}
+#navbar-user img{
+    width: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#navbar-user h5{
+    padding-left: 1rem;
+}
+#navbar-user i{
+    padding-left: 3rem;
+    cursor: pointer;
+}
+#main-content{
+    background-color: var(--main-content-background--);
+    border-radius: 0 2rem 2rem 0;
+    color: var(--font-color--);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+#main-content header{
+    padding: 1rem 0;
+}
+#main-content header input{
+    height: 2.5rem;
+    width: 80%;
+    border-radius: 2rem;
+    border: 0;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem;
+    text-indent: 3rem;
+}
+#main-banner{
+    padding: 2rem 0;
+}
+#main-banner #carouselExampleIndicators{
+    width: 80%;
+}
+#main-banner #carouselExampleIndicators img{
+    border-radius: 1rem;
+}
+#main-content h5{
+    padding: 0 3rem;
+    font-size: 2rem;
+}
+#my-playlist{
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+#play-list{
+    padding: 0.5rem 0;
+    height: 12rem;
+    overflow: auto;
+}
+.my-playlist-list{
+    padding: 0.2rem 0;   
+    cursor: pointer;
+    font: optional;
+}
+.my-playlist-list i{
+    font-size: 1.2rem;
+    font-style: unset;
+}
+.my-playlist-list:hover{
+    background-color: var(--my-playlist-list-hover--);
+    border-radius: 0.4rem;
+}
+#play-song{
+    background-color: var(--play-song-background--);
+    border-radius: 1rem;
+    padding: 0 1rem 1rem;
+    margin-top: 2rem;
+}
+#play-control{
+    padding: 1rem 0;
+}
+#play-control i{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+#play-control input{
+    width: 50%;
+}
+#play-control #play{
+    font-size: 3rem;
+}
+.control-active{
+    color: yellow;
+    font-weight: bold;
+}
+.play-active{
+    background-color: var(--my-playlist-list-hover--);
+    border-radius: 0.4rem;
+}
+:root{
+    --font-color--: black;
+    --body-background--: #4780ae;
+    --container-background--: antiquewhite;
+    --navar-background--: #f1f1f1;
+    --check-background--: black;
+    --check-background-primary--: white;
+    --logo-color-- : rgb(160, 129, 29);
+    --navbar-content-li-background--: black;
+    --navbar-content-li-hover-color--: white;
+    --main-content-background--: #d2d2d2;
+    --my-playlist-list-hover--: #f1f1f1;
+    --play-song-background--: white;
+}
+.darkMode{
+    --font-color--: white;
+    --body-background--: rgb(43, 42, 42);
+    --container-background--: antiquewhite;
+    --navar-background--: #000000;
+    --check-background--: white;
+    --check-background-primary--: black ;
+    --logo-color-- : rgb(160, 129, 29);
+    --navbar-content-li-background--: rgb(121, 109, 109);
+    --navbar-content-li-hover-color--: white;
+    --main-content-background--: #0e1d35;
+    --my-playlist-list-hover--: #3a3434;
+    --play-song-background--: grey;
+}
+
