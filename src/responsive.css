@@ -2,6 +2,9 @@
     html{
         font-size: 50%;
     }
+    #play-song{
+        margin: 0px;
+    }
     #root div.row{
         position: relative;
     }

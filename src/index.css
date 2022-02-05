@@ -4,6 +4,94 @@ html{
 body{
     background-color: var(--body-background--);
 }
+input[type=range] {
+    /* height: 17px; */
+    -webkit-appearance: none;
+    margin: 10px 0;
+    /* width: 100%; */
+  }
+  /* input[type=range]:focus {
+    outline: none;
+  } */
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #9C9C9C;
+    border-radius: 1px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #0A3127;
+    border: 1px solid #060F0A;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #9C9C9C;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #9C9C9C;
+    border-radius: 1px;
+    border: 0px solid #010101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #0A3127;
+    border: 1px solid #060F0A;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #9C9C9C;
+    border: 0px solid #010101;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #9C9C9C;
+    border: 0px solid #010101;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #0A3127;
+    border: 1px solid #060F0A;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #9C9C9C;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #9C9C9C;
+  } 
+
+  
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -30,6 +118,7 @@ body{
     background-color: var(--container-background--);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 i{
     font-size: 3rem;
@@ -178,7 +267,7 @@ i{
     overflow: auto;
 }
 .my-playlist-list{
-    padding: 0.2rem 0;   
+    padding: 5px 0;   
     cursor: pointer;
     font: optional;
 }
