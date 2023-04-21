@@ -278,6 +278,7 @@ i{
 .my-playlist-list:hover{
     background-color: var(--my-playlist-list-hover--);
     border-radius: 0.4rem;
+    width: 99%;
 }
 #play-song{
     background-color: var(--play-song-background--);
@@ -305,6 +306,7 @@ i{
 .play-active{
     background-color: var(--my-playlist-list-hover--);
     border-radius: 0.4rem;
+    width: 99%;
 }
 :root{
     --font-color--: black;
